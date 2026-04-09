@@ -1,0 +1,54 @@
+{
+  "task": "fertilizer_recommendation",
+  "best_model": "extra_trees",
+  "calibrated": true,
+  "feature_columns": [
+    "Temparature",
+    "Humidity",
+    "Moisture",
+    "Nitrogen",
+    "Potassium",
+    "Phosphorous",
+    "Soil_Type_Encoded",
+    "Crop_Type_Encoded"
+  ],
+  "class_count": 7,
+  "classes": [
+    "10-26-26",
+    "14-35-14",
+    "17-17-17",
+    "20-20",
+    "28-28",
+    "DAP",
+    "Urea"
+  ],
+  "metrics": {
+    "accuracy": 0.9547826086956521,
+    "f1_macro": 0.9518339317210549,
+    "f1_weighted": 0.9546824769003323,
+    "top_k": {
+      "top1": 0.9547826086956521,
+      "top2": 0.9756521739130435,
+      "top3": 0.9791304347826087
+    }
+  },
+  "model_version": "fertilizer_recommendation-20260330-172122",
+  "trained_at_utc": "2026-03-30T17:21:22+00:00",
+  "dataset_paths": [
+    "data/fertilizer.csv"
+  ],
+  "artifact_paths": [
+    "models/fertilizer_model.pkl",
+    "models/fertilizer_encoders.pkl",
+    "models/fertilizer_label_encoder.pkl",
+    "models/soil_encoder.pkl",
+    "models/crop_encoder.pkl",
+    "models/fertilizer_scaler.pkl",
+    "models/fertilizer_metadata.json",
+    "models/results/fertilizer_model_comparison.csv",
+    "models/results/fertilizer_model_comparison.png",
+    "models/results/fertilizer_confusion_matrix.png",
+    "models/results/fertilizer_roc_curves.png",
+    "models/results/fertilizer_classification_report.txt"
+  ]
+}

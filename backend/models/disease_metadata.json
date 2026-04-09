@@ -1,0 +1,110 @@
+{
+  "dataset": "PlantDoc.v2-resize-100x100.multiclass",
+  "class_names": [
+    "Apple Scab Leaf",
+    "Apple leaf",
+    "Apple rust leaf",
+    "Bell_pepper leaf",
+    "Bell_pepper leaf spot",
+    "Blueberry leaf",
+    "Cherry leaf",
+    "Corn Gray leaf spot",
+    "Corn leaf blight",
+    "Corn rust leaf",
+    "Peach leaf",
+    "Potato leaf",
+    "Potato leaf early blight",
+    "Potato leaf late blight",
+    "Raspberry leaf",
+    "Soyabean leaf",
+    "Squash Powdery mildew leaf",
+    "Strawberry leaf",
+    "Tomato Early blight leaf",
+    "Tomato Septoria leaf spot",
+    "Tomato leaf",
+    "Tomato leaf bacterial spot",
+    "Tomato leaf late blight",
+    "Tomato leaf mosaic virus",
+    "Tomato leaf yellow virus",
+    "Tomato mold leaf",
+    "grape leaf",
+    "grape leaf black rot"
+  ],
+  "train_samples": 1910,
+  "validation_samples": 338,
+  "test_samples": 234,
+  "dropped_test_samples": 0,
+  "deployed_reference_samples": 2248,
+  "model_type": "cnn_transfer_mobilenet_v3_small",
+  "input_size": [
+    224,
+    224
+  ],
+  "normalization": {
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "label_aliases": {
+    "Soybean leaf": "Soyabean leaf"
+  },
+  "class_counts": {
+    "Apple Scab Leaf": 75,
+    "Apple leaf": 66,
+    "Apple rust leaf": 65,
+    "Bell_pepper leaf": 42,
+    "Bell_pepper leaf spot": 46,
+    "Blueberry leaf": 82,
+    "Cherry leaf": 39,
+    "Corn Gray leaf spot": 49,
+    "Corn leaf blight": 147,
+    "Corn rust leaf": 87,
+    "Peach leaf": 86,
+    "Potato leaf": 2,
+    "Potato leaf early blight": 86,
+    "Potato leaf late blight": 80,
+    "Raspberry leaf": 94,
+    "Soyabean leaf": 47,
+    "Squash Powdery mildew leaf": 104,
+    "Strawberry leaf": 71,
+    "Tomato Early blight leaf": 64,
+    "Tomato Septoria leaf spot": 115,
+    "Tomato leaf": 47,
+    "Tomato leaf bacterial spot": 81,
+    "Tomato leaf late blight": 83,
+    "Tomato leaf mosaic virus": 37,
+    "Tomato leaf yellow virus": 57,
+    "Tomato mold leaf": 68,
+    "grape leaf": 46,
+    "grape leaf black rot": 44
+  },
+  "initialization": "imagenet_pretrained",
+  "metrics": {
+    "accuracy": 0.48717948717948717,
+    "f1_macro": 0.4663141471489138,
+    "f1_weighted": 0.47807721056861074,
+    "top_k": {
+      "top1": 0.48717948717948717,
+      "top3": 0.7649572649572649
+    },
+    "top1_with_crop_filter": 0.7008547008547008
+  },
+  "task": "disease_detection",
+  "model_version": "disease_detection-20260331-095731",
+  "trained_at_utc": "2026-03-31T09:57:31+00:00",
+  "dataset_paths": [
+    "data/plantdoc"
+  ],
+  "artifact_paths": [
+    "models/disease_model.pt",
+    "models/disease_metadata.json",
+    "models/results/disease_classification_report.json"
+  ]
+}

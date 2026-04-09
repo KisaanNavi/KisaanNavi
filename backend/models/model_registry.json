@@ -1,0 +1,172 @@
+{
+  "updated_at_utc": "2026-03-31T09:57:31+00:00",
+  "models": {
+    "crop_recommendation": {
+      "latest": {
+        "version": "crop_recommendation-20260330-172029",
+        "trained_at_utc": "2026-03-30T17:20:29+00:00",
+        "metrics": {
+          "accuracy": 0.9931818181818182,
+          "f1_macro": 0.9931775541531639,
+          "f1_weighted": 0.9931775541531639,
+          "top_k": {
+            "top1": 0.9931818181818182,
+            "top3": 1.0,
+            "top5": 1.0
+          }
+        },
+        "metadata_file": "models/crop_metadata.json"
+      },
+      "history": [
+        {
+          "version": "crop_recommendation-20260330-172029",
+          "trained_at_utc": "2026-03-30T17:20:29+00:00",
+          "metrics": {
+            "accuracy": 0.9931818181818182,
+            "f1_macro": 0.9931775541531639,
+            "f1_weighted": 0.9931775541531639,
+            "top_k": {
+              "top1": 0.9931818181818182,
+              "top3": 1.0,
+              "top5": 1.0
+            }
+          },
+          "artifacts": [
+            "models/versions/crop_recommendation/crop_recommendation-20260330-172029/crop_model.pkl",
+            "models/versions/crop_recommendation/crop_recommendation-20260330-172029/crop_label_encoder.pkl",
+            "models/versions/crop_recommendation/crop_recommendation-20260330-172029/crop_scaler.pkl",
+            "models/versions/crop_recommendation/crop_recommendation-20260330-172029/crop_metadata.json",
+            "models/versions/crop_recommendation/crop_recommendation-20260330-172029/crop_model_comparison.csv",
+            "models/versions/crop_recommendation/crop_recommendation-20260330-172029/crop_model_comparison.png",
+            "models/versions/crop_recommendation/crop_recommendation-20260330-172029/crop_confusion_matrix.png",
+            "models/versions/crop_recommendation/crop_recommendation-20260330-172029/crop_roc_curves.png",
+            "models/versions/crop_recommendation/crop_recommendation-20260330-172029/crop_classification_report.txt"
+          ]
+        }
+      ]
+    },
+    "fertilizer_recommendation": {
+      "latest": {
+        "version": "fertilizer_recommendation-20260330-172122",
+        "trained_at_utc": "2026-03-30T17:21:22+00:00",
+        "metrics": {
+          "accuracy": 0.9547826086956521,
+          "f1_macro": 0.9518339317210549,
+          "f1_weighted": 0.9546824769003323,
+          "top_k": {
+            "top1": 0.9547826086956521,
+            "top2": 0.9756521739130435,
+            "top3": 0.9791304347826087
+          }
+        },
+        "metadata_file": "models/fertilizer_metadata.json"
+      },
+      "history": [
+        {
+          "version": "fertilizer_recommendation-20260330-172122",
+          "trained_at_utc": "2026-03-30T17:21:22+00:00",
+          "metrics": {
+            "accuracy": 0.9547826086956521,
+            "f1_macro": 0.9518339317210549,
+            "f1_weighted": 0.9546824769003323,
+            "top_k": {
+              "top1": 0.9547826086956521,
+              "top2": 0.9756521739130435,
+              "top3": 0.9791304347826087
+            }
+          },
+          "artifacts": [
+            "models/versions/fertilizer_recommendation/fertilizer_recommendation-20260330-172122/fertilizer_model.pkl",
+            "models/versions/fertilizer_recommendation/fertilizer_recommendation-20260330-172122/fertilizer_encoders.pkl",
+            "models/versions/fertilizer_recommendation/fertilizer_recommendation-20260330-172122/fertilizer_label_encoder.pkl",
+            "models/versions/fertilizer_recommendation/fertilizer_recommendation-20260330-172122/soil_encoder.pkl",
+            "models/versions/fertilizer_recommendation/fertilizer_recommendation-20260330-172122/crop_encoder.pkl",
+            "models/versions/fertilizer_recommendation/fertilizer_recommendation-20260330-172122/fertilizer_scaler.pkl",
+            "models/versions/fertilizer_recommendation/fertilizer_recommendation-20260330-172122/fertilizer_metadata.json",
+            "models/versions/fertilizer_recommendation/fertilizer_recommendation-20260330-172122/fertilizer_model_comparison.csv",
+            "models/versions/fertilizer_recommendation/fertilizer_recommendation-20260330-172122/fertilizer_model_comparison.png",
+            "models/versions/fertilizer_recommendation/fertilizer_recommendation-20260330-172122/fertilizer_confusion_matrix.png",
+            "models/versions/fertilizer_recommendation/fertilizer_recommendation-20260330-172122/fertilizer_roc_curves.png",
+            "models/versions/fertilizer_recommendation/fertilizer_recommendation-20260330-172122/fertilizer_classification_report.txt"
+          ]
+        }
+      ]
+    },
+    "disease_detection": {
+      "latest": {
+        "version": "disease_detection-20260331-095731",
+        "trained_at_utc": "2026-03-31T09:57:31+00:00",
+        "metrics": {
+          "accuracy": 0.48717948717948717,
+          "f1_macro": 0.4663141471489138,
+          "f1_weighted": 0.47807721056861074,
+          "top_k": {
+            "top1": 0.48717948717948717,
+            "top3": 0.7649572649572649
+          },
+          "top1_with_crop_filter": 0.7008547008547008
+        },
+        "metadata_file": "models/disease_metadata.json"
+      },
+      "history": [
+        {
+          "version": "disease_detection-20260330-172126",
+          "trained_at_utc": "2026-03-30T17:21:26+00:00",
+          "metrics": {},
+          "artifacts": [
+            "models/versions/disease_detection/disease_detection-20260330-172126/disease_model.pkl",
+            "models/versions/disease_detection/disease_detection-20260330-172126/disease_metadata.json",
+            "models/versions/disease_detection/disease_detection-20260330-172126/disease_classification_report.json"
+          ]
+        },
+        {
+          "version": "disease_detection-20260331-074632",
+          "trained_at_utc": "2026-03-31T07:46:32+00:00",
+          "metrics": {},
+          "artifacts": [
+            "models/versions/disease_detection/disease_detection-20260331-074632/disease_model.pkl",
+            "models/versions/disease_detection/disease_detection-20260331-074632/disease_metadata.json",
+            "models/versions/disease_detection/disease_detection-20260331-074632/disease_classification_report.json"
+          ]
+        },
+        {
+          "version": "disease_detection-20260331-085444",
+          "trained_at_utc": "2026-03-31T08:54:44+00:00",
+          "metrics": {
+            "accuracy": 0.2606837606837607,
+            "f1_macro": 0.23294026562047157,
+            "f1_weighted": 0.2352973864730891,
+            "top_k": {
+              "top1": 0.2606837606837607,
+              "top3": 0.5170940170940171
+            }
+          },
+          "artifacts": [
+            "models/versions/disease_detection/disease_detection-20260331-085444/disease_model.pt",
+            "models/versions/disease_detection/disease_detection-20260331-085444/disease_metadata.json",
+            "models/versions/disease_detection/disease_detection-20260331-085444/disease_classification_report.json"
+          ]
+        },
+        {
+          "version": "disease_detection-20260331-095731",
+          "trained_at_utc": "2026-03-31T09:57:31+00:00",
+          "metrics": {
+            "accuracy": 0.48717948717948717,
+            "f1_macro": 0.4663141471489138,
+            "f1_weighted": 0.47807721056861074,
+            "top_k": {
+              "top1": 0.48717948717948717,
+              "top3": 0.7649572649572649
+            },
+            "top1_with_crop_filter": 0.7008547008547008
+          },
+          "artifacts": [
+            "models/versions/disease_detection/disease_detection-20260331-095731/disease_model.pt",
+            "models/versions/disease_detection/disease_detection-20260331-095731/disease_metadata.json",
+            "models/versions/disease_detection/disease_detection-20260331-095731/disease_classification_report.json"
+          ]
+        }
+      ]
+    }
+  }
+}

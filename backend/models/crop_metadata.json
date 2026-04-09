@@ -1,0 +1,65 @@
+{
+  "task": "crop_recommendation",
+  "best_model": "random_forest",
+  "calibrated": true,
+  "feature_columns": [
+    "N",
+    "P",
+    "K",
+    "temperature",
+    "humidity",
+    "ph",
+    "rainfall"
+  ],
+  "class_count": 22,
+  "classes": [
+    "apple",
+    "banana",
+    "blackgram",
+    "chickpea",
+    "coconut",
+    "coffee",
+    "cotton",
+    "grapes",
+    "jute",
+    "kidneybeans",
+    "lentil",
+    "maize",
+    "mango",
+    "mothbeans",
+    "mungbean",
+    "muskmelon",
+    "orange",
+    "papaya",
+    "pigeonpeas",
+    "pomegranate",
+    "rice",
+    "watermelon"
+  ],
+  "metrics": {
+    "accuracy": 0.9931818181818182,
+    "f1_macro": 0.9931775541531639,
+    "f1_weighted": 0.9931775541531639,
+    "top_k": {
+      "top1": 0.9931818181818182,
+      "top3": 1.0,
+      "top5": 1.0
+    }
+  },
+  "model_version": "crop_recommendation-20260330-172029",
+  "trained_at_utc": "2026-03-30T17:20:29+00:00",
+  "dataset_paths": [
+    "data/crop_recommendation.csv"
+  ],
+  "artifact_paths": [
+    "models/crop_model.pkl",
+    "models/crop_label_encoder.pkl",
+    "models/crop_scaler.pkl",
+    "models/crop_metadata.json",
+    "models/results/crop_model_comparison.csv",
+    "models/results/crop_model_comparison.png",
+    "models/results/crop_confusion_matrix.png",
+    "models/results/crop_roc_curves.png",
+    "models/results/crop_classification_report.txt"
+  ]
+}

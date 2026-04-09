@@ -1,0 +1,19 @@
+fastapi==0.115.8
+uvicorn==0.34.3
+python-dotenv==1.0.1
+pandas==2.2.3
+numpy==2.1.0
+scikit-learn==1.6.1
+xgboost==2.1.4
+joblib==1.4.2
+httpx==0.28.1
+pydantic==2.10.6
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+pymongo==4.9.1
+motor==3.6.1
+python-multipart==0.0.12
+Pillow==11.1.0
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.11.0+cpu
+torchvision==0.26.0+cpu

@@ -1,0 +1,18 @@
+{
+  "crop": "Tomato",
+  "class_names": [
+    "Tomato Early blight leaf",
+    "Tomato Septoria leaf spot",
+    "Tomato leaf",
+    "Tomato leaf bacterial spot",
+    "Tomato leaf late blight",
+    "Tomato leaf mosaic virus",
+    "Tomato leaf yellow virus",
+    "Tomato mold leaf"
+  ],
+  "train_samples": 552,
+  "validation_samples": 98,
+  "test_samples": 69,
+  "top1": 0.43478260869565216,
+  "top3": 0.7246376811594203
+}

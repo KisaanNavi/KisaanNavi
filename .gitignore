@@ -1,0 +1,54 @@
+# Environment files
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+**/venv/
+**/.venv/
+
+# Node / frontend
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+coverage/
+
+# Local caches and temp output
+.torch_cache/
+**/.torch_cache/
+tmp/
+temp/
+tmp_doc_extract/
+*.log
+
+# Generated ML artifacts (not source-of-truth data)
+backend/data/plantdoc/
+backend/models/results/
+backend/models/versions/
+backend/models/feedback_summary.json
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
