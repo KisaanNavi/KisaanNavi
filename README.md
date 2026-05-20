@@ -15,8 +15,8 @@ Docker is the intended local workflow.
 
 Before you start:
 
-- make sure Docker Desktop is running
-- create `backend/.env` from `backend/.env.example`
+- Make sure Docker Desktop is running
+- Create `backend/.env` from `backend/.env.example`
 
 From the project root:
 
