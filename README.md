@@ -102,3 +102,17 @@ docker compose run --rm backend python ml/train_disease_model.py
 - `JWT_SECRET` is required. The backend no longer falls back to a shared default secret.
 - Training commands in Docker require the backend image dependencies from `backend/requirements.txt`.
 - The frontend production build is currently working.
+
+## Deploying
+
+Checklist for a fresh host (VPS):
+
+1. Install Docker, then clone with model binaries:
+   `git lfs install && git clone https://github.com/KisaanNavi/KisaanNavi && cd KisaanNavi && git lfs pull`
+   (Without `git lfs pull`, `backend/models/` holds 128-byte pointers and the first inference request crashes.)
+2. Create `backend/.env` from `backend/.env.example` with real values for
+   `GROQ_API_KEY`, `SARVAM_API_KEY`, `JWT_SECRET`, `GROQ_MODEL`, and `ANALYTICS_ACCESS_KEY`.
+   The file is mounted into the backend container, and a missing file stops it from starting.
+3. Local demo: `docker compose up --build`, then open `http://localhost:8080`.
+   Remote host: `VITE_API_URL=https://<host>:5000/api docker compose up --build`
+   (the frontend API URL is baked in at build time and `localhost` means the viewer's machine).
